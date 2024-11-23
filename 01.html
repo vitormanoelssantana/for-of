@@ -1,0 +1,23 @@
+
+<script>
+    //PROBLEMA
+    //Considere a lista de números abaixo:
+    // let listaDeNumeros = [1, 4, 6, 8, 898, 7, 43, 2980, 3500, 10];
+    //Faça um programa que identifique os números pares e apresente-os ao fim do programa, ordenados de forma crescente.
+
+    //ENTRADA
+    let listaDeNumeros = [1, 4, 6, 8, 898, 7, 43, 2980, 3500, 10];
+    let crescente= []
+    //PROCESSAMENTO
+    for(let par of listaDeNumeros){
+        if(par%2==0){
+            crescente.push(par)
+            
+        }else{
+            document.write('')
+        }
+    }
+    document.write(`<li>${crescente.sort((a, b) => a - b )}</li>`)
+    //SAÍDA
+
+</script>
